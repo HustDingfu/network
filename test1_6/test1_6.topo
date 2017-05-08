@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.320">
+    <devices>
+        <dev id="E58CC9B9-79C9-4513-9781-6EFCC1DB12AD" name="R1" model="AR2220" settings="" system_mac="00-E0-FC-3E-63-40" com_port="2001" bootmode="0" cx="675.000000" cy="313.000000" edit_left="700" edit_top="288">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="9EE8A636-0796-4571-8048-11E31E11B553" name="S1" model="S5700" settings="" system_mac="4C-1F-CC-F6-78-11" com_port="2000" bootmode="0" cx="441.000000" cy="313.000000" edit_left="472" edit_top="289">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="16FC4DCB-CB4A-4a17-AB5A-7F510322D135" name="FTP Server" model="Server" settings="-domain 0 -eth 54-89-98-37-2A-59 -ipaddr 10.0.2.1 -ipmask 255.255.255.0 -gateway 10.0.2.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-37-2A-59" com_port="0" bootmode="0" cx="677.000000" cy="470.000000" edit_left="704" edit_top="524">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="E20608FB-ECEE-4419-9923-1B81B72B549C" name="CLIENT3" model="Client" settings="-domain 0 -eth 54-89-98-E4-39-EA -ipaddr 10.0.1.1 -ipmask 255.255.255.0 -gateway 10.0.1.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-E4-39-EA" com_port="0" bootmode="0" cx="443.000000" cy="462.000000" edit_left="470" edit_top="516">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="16FC4DCB-CB4A-4a17-AB5A-7F510322D135" destDeviceID="E58CC9B9-79C9-4513-9781-6EFCC1DB12AD">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="703.449951" srcBoundRect_Y="453.819733" srcOffset_X="16.000000" srcOffset_Y="1.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="702.550049" tarBoundRect_Y="383.180267" tarOffset_X="14.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="E58CC9B9-79C9-4513-9781-6EFCC1DB12AD" destDeviceID="9EE8A636-0796-4571-8048-11E31E11B553">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="658.816223" srcBoundRect_Y="340.000000" srcOffset_X="-38.000000" srcOffset_Y="22.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="511.183777" tarBoundRect_Y="340.000000" tarOffset_X="-15.000000" tarOffset_Y="18.000000" />
+        </line>
+        <line srcDeviceID="9EE8A636-0796-4571-8048-11E31E11B553" destDeviceID="E20608FB-ECEE-4419-9923-1B81B72B549C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="468.579590" srcBoundRect_Y="383.179871" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="469.420410" tarBoundRect_Y="445.820129" tarOffset_X="8.000000" tarOffset_Y="-1.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
